@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gingi's Studio</title>
+<link rel="icon" href="images/logo_gingi.ico" type="image/x-icon">
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+	
+	
+	<div class="container"> <!-- All the content is inside this container -->
+		<header class="nav">
+			<img src="images/logo_gingi.png" class="logo-image" alt="logo">
+			
+			<div id="myNav" class="overlay">
+	 			 
+		   		 <div class="overlay-content"> <!-- We show the menu with an overlay over the whole page -->
+				 	 <a class="homeMenu" href="#firstpage">Home</a>
+					 <a class="ourMissionMenu" href="#secondpage">Our Mission</a>
+					 <a class="servicesMenu" href="#thirdpage">Services</a>
+					 <a class="projectsMenu" href="#fourthpage">Recent projects</a>
+					 <a class="teamMenu" href="#fifthpage">Our team</a>
+					 <a class="footerMenu" href="#footerpage">Contact us</a>
+			     </div>
+			</div>
+			<div class="burgerMenuDiv">
+				<div class="container-burgerMenu" onClick="myFunction(this)">
+					 <div class="bar1"></div>
+					 <div class="bar2"></div>
+					 <div class="bar3"></div>
+				</div>
+			</div>
+		</header>
+        
+        <!-- This div contains the lines that show on which page is the user. 
+             When the user scrolls with a function in JavaScript we change the width of the hr line-->
+        
+		<div class="parent-line-scrolling">
+			<div class="line-scrolling"> 
+				<hr class="hr1" style="width: 15%"><br>
+				<hr class="hr2" style="width: 15%"><br>
+				<hr class="hr3" style="width: 15%"><br>
+				<hr class="hr4" style="width: 15%"><br>
+				<hr class="hr5" style="width: 15%"><br>
+				<hr class="hr6" style="width: 15%">
+			</div>
+		</div>
+		
+		<div class="container-content"> <!-- This container keeps everything in the center -->
+			<div class="background-container-first-page" id="firstpage"> <!-- This container is used for the background for each page -->
+				<div class="first-page">
+				    
+					<div class="first-page-text">
+						<img src="images/logo_gingi.png" class="logo-image-first">
+						<h1>Gingi Tailoring Studio Budapest</h1>
+						<p>A full-service sewing &amp; styling studio in the heart of Budapest.</p>
+					</div>
+
+					<div class="div-button">
+                        <!-- When this button is clicked a function is accessed in order to show the booking menu -->
+						<button class="intro-button" onclick="setster_widget.show();"><b>Book an appointment</b></button>
+					</div>
+					<div class="divArrows">
+                        <div class="arrow-div1">
+                            <p>Find more</p>
+                        </div>
+                        <div class="arrow-div2">
+                            <i class="arrow2 down"></i>
+                        </div>
+					</div>
+					    
+					
+				</div>
+			</div>
+			
+			<div class="background-container-second-page" id="secondpage">
+				<div class="second-page">
+					<div class="second-page-text">
+						<p>What we do</p>
+						<h1>Our mission</h1>
+						<p>We specialize in film and photo shoots while serving the individual customer for custom made
+                            clothes and the odd tailoring job. Our years long experience and expertise in styling, we realized 
+                            that speed, precision and quality are as important as exclusivity and uniqueness.</p>
+					</div>
+				
+					<div class="iframe-second-page">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wh0fejS0hLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			
+			<div class="background-container-third-page" id="thirdpage">
+				<div class="third-page">
+					<div class="third-page-text">
+						<p>our services</p>
+						<h1>What we do</h1>
+						
+					</div>
+					
+					<div class="div-services">
+						<div class="services"> <!-- This container shows all the services that company offers and everything is positioned with grid -->
+							<a class="service-film-industry">Film Industry</a>
+                            <a class="service-ladies-gents">Ladies and Gents</a>
+							<a class="service-performers">Performers</a>
+							
+						</div>
+                        <div class="parent-small-services">
+                            <div class="div-small-services">
+                                <a class="service-films">Production</a>
+                                <a class="service-stylists">Costume departments</a>
+                                <a class="service-fitting">Fitting</a>
+                                <a class="service-duty">Duty</a>
+                                <a class="service-private">Costume tailor</a>
+                                <a class="service-wardrobe">Styling &amp; wardrobe services</a>
+                                <a class="service-rental">Rental</a>
+                               
+                            </div>
+                        </div>
+                        <div class="parent-desc-small-services">
+                            <div class="description-small-services">
+                                <div class="desc-service-films">
+                                   <p>A Gingi Costume Company covers film and advertisement production.</p>
+                                    <p>A wide range of services are covered from costume design to costume Supervision all the way to providing a full costume department.</p>
+                                    <p>Our professional &amp; coherent team doesn’t know the impossible.</p>
+                                    <p>Our new downtown studio is the perfect provider for any film or photo shoot.</p>
+                                </div>
+                                <div class="desc-service-stylists">
+                                    <p>A Gingi Costume Company provides a fully equipped location for stylist and costum designer clients. In our studio everything is given to construct costumes, sewing any classic piece to historical costumes.</p>
+                                    <p>We also rent out clothes from our extensive collection.</p>
+                                </div>
+                                <div class="desc-service-fitting">
+                                    <p>If you are only looking for a stylish and professional space for a fitting - we can provide an all-round solution.</p>
+                                </div>
+                                <div class="desc-service-duty">
+                                    <p>We provide „On-set Duty” as well as „Emergency Duty” during film and ad shoots. Gingi Costume Company is ready to overcome any problem that can be solved with a sewing machine or two, within unrealistically short period of time.</p>
+                                </div>
+                                <div class="desc-service-private">
+                                    <p>Perfectly fitting dress gives such self-confidence that everyone should experience. Genji costume company is committed to make dreams come true, providing all-round services from design to creating individual pieces. The repertoire is wide and includes wedding dresses, full dresses, evening gownsas well as tail coats, dress suits, white tie and black tie.</p>
+                                    <p>Let it be one piece or dressing up a whole family, mending a dress or creating something entirely new the outcome is always guaranteed, our costumers are proudly wearing their tailor made clothes.</p>
+                                </div>
+                                <div class="desc-service-wardrobe">
+                                    <p>A Gingi Costume Company is a wardrobe expert and sylist for bands. What does that mean?</p> 
+                                    <p>Creating and developing personal style, uniform concept and a full wardrobe. This includes buying, producing, renting for different occasions, ad hoc stylist consultancy, wardrobe review, dressing for concerts, also storing clothes accessories and maintenence.</p>
+                                </div>
+                                <div class="desc-service-rental">
+                                    <p>Our wardrobe is open for anyone to browse through and rent for a day or a week.</p>
+                                    <p>A wide range of costumes and accessories are available.</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="background-container-fourth-page" id="fourthpage">
+				<div class="fourth-page">
+					<div class="fourth-page-text">
+						<p>Discover our</p>
+                        <h1>Recent work</h1>
+                        <p>We are very happy with all the projects that we are finishing! Check some of our favourites below!</p>
+					</div>
+						
+					<div class="div-projects-parent">
+                        <section id="projectList">
+                          <template id="projectTemplate">
+                                    <div class="div-projects">
+                                        <div class="div-project-img">
+                                        <img class="project-img" src="" alt="images">
+                                            </div>
+                                            <div class="div-h1">
+                                                <p class="projects-h1">HEADER</p>
+                                            </div>
+
+
+                                        <p class="projects-p">PARAGRAPH</p>
+                                    </div>
+                          </template>
+
+                        </section>
+                        
+                        <!-- When this button is clicked we show 3 more projects fetched from Wordpress Api -->
+                        <div class="div-button-more">
+						<button class="button-more">See more</button>
+						</div>
+						</div>
+				
+
+				</div>
+			</div>
+			
+			<div class="background-container-fifth-page" id="fifthpage">
+				<div class="fifth-page"> 
+					<div class="fifth-page-text">
+						<p>Meet us</p>
+                        <h1>Team Members</h1>
+                        <p></p>
+						<div class="team-names">
+							<p class="vivien-text">Mária</p>
+								<p class="vivien-sub" style="display: none;">Head stylist &amp; owner</p>
+							<p class="andrei-text">Bori</p>
+								<p class="andrei-sub" style="display: none;">operative manager</p>
+							<p class="razvan-text">Julianna</p>
+								<p class="razvan-sub" style="display: none;">sewing lady</p>
+				            <p class="kati-text">Kati</p>
+								<p class="kati-sub" style="display: none;">sewing lady</p>	
+					</div>
+                </div>
+				    
+				    
+				    
+					<div class="team-images">
+						<div class="team-image">
+							<div class="myImages">
+								<img src="images/team/boss.png" class="vivien-image" style="width:100%; display: block;">
+							</div>
+							<div class="myImages">
+								<img src="images/team/lady3.png" class="andrei-image" style="width:100%; display: none;">
+							</div>
+							<div class="myImages">
+								<img src="images/team/lady2.png" class="razvan-image" style="width:100%; display: none;">
+							</div>
+							<div class="myImages">
+								<img src="images/team/lady1.png" class="kati-image" style="width:100%; display: none;">
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				<div class="slideshow-container">
+
+                    <div class="mySlides fade">
+
+                      <img src="images/team/boss.png" style="width:100%">
+                      <div class="text">Mária</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <img src="images/team/lady3.png" style="width:100%">
+                      <div class="text">Bori</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <img src="images/team/lady2.png" style="width:100%">
+                      <div class="text">Julianna</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="images/team/lady1.png" style="width:100%">
+                      <div class="text">Kati</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+						
+					
+				</div>
+			</div>
+			<div class="background-container-footer-page" id="footerpage">
+				<div class="footer-page">
+					<div class="footer-page-text">
+						<h1>Contact us</h1>
+                            <div class="address-div">
+                               <img src="images/icons/ADRESS_inactive.png" class="icons">
+                                <p>1061 Budapest, Paulay Ede utca 33.</p>
+                            </div>
+                            
+						    <div class="tel-div">
+                                <img src="images/icons/PHONE_inactive.png" class="icons">
+						        <p>+36 20 398 9026</p>
+						    </div>
+						    <div class="div-email">
+                                <img src="images/icons/E-MAIL_inactive.png" class="icons">
+						        <p>gingi.costume@gmail.com</p>
+						    </div>
+						    
+						    <div class="social-media-div">
+                               <img src="images/icons/FACEBOOK_inactive.png" class="social-icons">
+						        <img src="images/icons/INSTAGRAM_inactive.png" class="social-icons">
+                                <p>Follow us</p>
+						    </div>
+						    <div class="footer-button-div">
+						        <button class="footer-button" onclick="setster_widget.show();">Book a meeting</button>
+                           </div>
+                        <!-- When this button is clicked a function is accessed in order to show the booking menu -->
+					</div>
+				
+					<div class="footer-form">
+						<h1>Send us a message</h1>
+						<form method="post" name="myemailform" action="localhost/send_email.php">
+							<br>
+							  <input type="text" placeholder="name">
+							  <br>
+							  <br>
+							<input type="text" placeholder="email">
+							<br><br>
+							
+							<textarea placeholder="message"></textarea>
+							  <br><br>
+							  <input type="submit" class="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+	
+
+    <!-- Begin Setster Widget -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var setsHost = is_ssl ? "https://www.setster.com/widget/" : "https://www.setster.com/widget/";
+  document.write(unescape("%3Cscript src='" + setsHost + "js/setster_over.js?v=2' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var setster_widget_options = {};
+
+  setster_widget_options.display = "overlay";  
+  setster_widget_options.uri = "gingibudapest";
+  setster_widget_options.placement = "hidden";  
+  setster_widget_options.buttonName = "Appointment";  
+  setster_widget_options.setsterURL = setsHost; 
+   var setster_widget = new Setster.setster_widget(setster_widget_options);
+</script>
+<!-- End Setster Widget -->
+    
+    <!-- This script has been used for checking if the form email is written correctly and it has been taken from http://form.guide/email-form/php-form-to-email.html -->
+	   <script src="js/email_validation.js"></script>
+    
+    <!-- With this script we fetch the project with JSON from Wordpress API -->
+	   <script src="js/fetch_project_data.js"></script>
+    
+    <!-- With this script we add animations and other usefull functions -->
+	   <script src="js/script.js"></script>
+</body>
+</html>
